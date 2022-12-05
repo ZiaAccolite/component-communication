@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Vendor } from '../vendor';
 
 @Component({
   selector: 'app-block-vendor',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlockVendorComponent implements OnInit {
 
+  @Input() blockedArray:Array<Vendor>=[];
   constructor() { }
 
   ngOnInit(): void {
